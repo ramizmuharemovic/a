@@ -1,0 +1,10 @@
+name: print echo
+on: push
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout new branch
+        uses: actions/checkout@v2

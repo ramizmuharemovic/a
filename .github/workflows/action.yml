@@ -8,3 +8,4 @@ jobs:
     steps:
       - name: Checkout new branch
         uses: actions/checkout@v2
+        uses: a/action@main

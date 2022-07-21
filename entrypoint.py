@@ -6,7 +6,7 @@ try:
     #url_change = "https://ananasGit.github.test/iam-qa-automation/"
     url_change = os.getenv('URL')
     #new_url = "https://ananasGit.com/"
-    new_url = os.getenv('NEW_URl')
+    new_url = "https://ananasGit.com/"
 
     new_html = text.replace(url_change, new_url)
 

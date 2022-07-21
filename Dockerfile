@@ -1,5 +1,5 @@
 FROM ubuntu
 
-COPY entrypoint.py /usr/bin/entrypoint.py
+COPY entrypoint.py /entrypoint.py
 RUN chmod +x ./entrypoint.py
 ENTRYPOINT ["entrypoint.py"]

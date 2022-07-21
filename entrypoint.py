@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 try:
     with open("index.html", "r", encoding='utf-8') as f:
     text= f.read()

@@ -1,10 +1,5 @@
-FROM alpine
+FROM ubuntu
 
-RUN apk add --no-cache
-RUN apk add  bash
-RUN apk add  httpie
-RUN apk add  jq
-
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-
-ENTRYPOINT ["entrypoint.sh"]
+COPY entrypoint.py /usr/local/bin/entrypoint.py
+RUN chmod +x ./entrypoint.py
+ENTRYPOINT ["entrypoint.py"]

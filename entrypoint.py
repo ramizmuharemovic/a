@@ -8,5 +8,6 @@ try:
 
     with open("index.html", "w", encoding='utf-8') as wr:
         wr.write(new_html)
+    print(new_html)
 except:
     print('error no file')
